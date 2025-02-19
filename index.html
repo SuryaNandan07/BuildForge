@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,98 +6,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Construction Hero Section</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111827;
-      color: #f9fafb;
-    }
+    /* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
-    header {
-      background-color: #1f2937;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      box-sizing: border-box;
-    }
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+}
 
-    body::before {
-      content: "";
-      display: block;
-      height: 100px; /* Adjust to match header height */
-    }
+.form-title { /* New class for the title */
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
 
-    .logo {
-      color: #fbbf24;
-      font-size: 24px;
-      font-weight: bold;
-      text-decoration: none;
-    }
+.btn-toggle {
+    display: flex;
+    margin-bottom: 20px; /* Adjusted margin */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
-    nav a {
-      color: #e5e7eb;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 16px;
-      transition: color 0.3s;
-    }
+.btn-toggle span {
+    padding: 12px 20px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
 
-    nav a:hover {
-      color: #fbbf24;
-    }
+/* ... (rest of the toggle button styles remain the same) */
 
-    .cta-button {
-      background-color: #fbbf24;
-      color: #111827;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
+.input-box {
+    margin-bottom: 15px;
+}
 
-    .cta-button:hover {
-      background-color: #f59e0b;
-    }
+.input-box input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
 
-    .hero1 {
-      position: relative;
-      text-align: center;
-    }
+/* ... (rest of the input box styles remain the same) */
 
-    .hero1 img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+.forgot-password { /* New class for the "Forgot password?" link */
+    text-align: right;
+    margin-bottom: 20px; /* Add some margin below */
+}
 
-    .text-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      
-      transform: translate(-50%, -50%);
-      color: #e5e7eb;
-      text-align: center;
-    }
+.forgot-password a {
+    color: #e74c3c; /* Red color for the link */
+    text-decoration: none;
+}
 
-    .text-container h1 {
-      color: #f0b727;
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
+.submit-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
 
-    .text-container p {
-      font-size: 20px;
-      margin-bottom: 20px;
-      font-style: bold;
-      filter: invert(100%);
-    filter: invert(100%);
+/* ... (rest of the button styles remain the same) */
+
+.signup-link { /* New class for the signup link at the bottom */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #333;
+    text-decoration: none;
+}
+
+.signup-link a.highlight { /* Highlighted signup link */
+    color: #e74c3c; /* Red color */
+}
     }
   </style>
 </head>
